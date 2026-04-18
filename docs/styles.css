@@ -211,6 +211,52 @@ ul {
   font-size: 14px;
 }
 
+.snapshot-grid,
+.recommendation-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 860px) {
+  .snapshot-grid,
+  .recommendation-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.snapshot-card,
+.recommendation-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  background: #fff;
+}
+
+.snapshot-image {
+  width: 100%;
+  height: 150px;
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-size: 12px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+.quote {
+  margin: 0 0 8px 0;
+}
+
+.quote-meta {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
 .columns {
   display: grid;
   gap: 12px;
